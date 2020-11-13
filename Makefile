@@ -6,7 +6,7 @@
 #    By: mlebrun <mlebrun@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/12 08:46:57 by mlebrun           #+#    #+#              #
-#    Updated: 2020/11/12 09:46:28 by mlebrun          ###   ########.fr        #
+#    Updated: 2020/11/12 13:02:06 by mlebrun          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,7 @@ bonus/ft_lstmap.c
 OBJS_BONUS = ${SRCS_BONUS:.c=.o} 
 
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -Iincludes/
 
 NAME = libft.a
 RM	= rm -rf
