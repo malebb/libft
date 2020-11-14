@@ -6,7 +6,7 @@
 /*   By: mlebrun <mlebrun@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/13 10:27:30 by mlebrun           #+#    #+#             */
-/*   Updated: 2020/11/13 10:27:31 by mlebrun          ###   ########.fr       */
+/*   Updated: 2020/11/13 13:55:36 by mlebrun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ void	*ft_memchr(const void *s, int c, size_t n)
 			return (&src[i]);
 		i++;
 	}
-	return (0);
+	return (NULL);
 }

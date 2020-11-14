@@ -6,7 +6,7 @@
 /*   By: mlebrun <mlebrun@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/13 10:41:31 by mlebrun           #+#    #+#             */
-/*   Updated: 2020/11/13 10:41:32 by mlebrun          ###   ########.fr       */
+/*   Updated: 2020/11/14 07:51:03 by mlebrun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,7 +101,7 @@ char			**ft_split(char const *s, char c)
 	nbr_word = ft_count_str(str, c);
 	if (!(strs = malloc(sizeof(char **) * (nbr_word + 1))))
 		return (0);
-	strs[nbr_word] = 0;
+	strs[nbr_word] = NULL;
 	if (!ft_allocate_memory(strs, str, c))
 		return (0);
 	ft_fill_strs(strs, str, c);

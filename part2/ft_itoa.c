@@ -6,7 +6,7 @@
 /*   By: mlebrun <mlebrun@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/13 10:39:42 by mlebrun           #+#    #+#             */
-/*   Updated: 2020/11/13 10:39:43 by mlebrun          ###   ########.fr       */
+/*   Updated: 2020/11/14 07:36:26 by mlebrun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,6 @@ static void		ft_fill_sign_nbr(long nb, char *nbr, int pos_or_neg,
 		nbr[size_nb] = '\0';
 		i = 0;
 	}
-	nbr[size_nb] = '\0';
 	ft_fill_nbr(nbr, nb, &i);
 }
 

@@ -6,7 +6,7 @@
 /*   By: mlebrun <mlebrun@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/13 10:42:02 by mlebrun           #+#    #+#             */
-/*   Updated: 2020/11/13 10:42:05 by mlebrun          ###   ########.fr       */
+/*   Updated: 2020/11/14 08:21:34 by mlebrun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	i = 0;
 	while (str[i] != '\0')
 	{
-		returns[i] = (*f)(i, s[i]);
+		returns[i] = (*f)(i, str[i]);
 		i++;
 	}
 	returns[i] = '\0';
