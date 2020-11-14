@@ -6,7 +6,7 @@
 /*   By: mlebrun <mlebrun@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/13 10:29:10 by mlebrun           #+#    #+#             */
-/*   Updated: 2020/11/13 10:29:12 by mlebrun          ###   ########.fr       */
+/*   Updated: 2020/11/14 15:59:59 by mlebrun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,4 +33,3 @@ size_t		ft_strlcat(char *dst, const char *src, size_t size)
 	dst[i + dst_size] = '\0';
 	return (src_size + dst_size);
 }
-

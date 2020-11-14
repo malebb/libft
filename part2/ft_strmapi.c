@@ -6,7 +6,7 @@
 /*   By: mlebrun <mlebrun@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/13 10:42:02 by mlebrun           #+#    #+#             */
-/*   Updated: 2020/11/14 08:21:34 by mlebrun          ###   ########.fr       */
+/*   Updated: 2020/11/14 16:01:06 by mlebrun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	int				str_len;
 	char			*returns;
 	unsigned int	i;
-	char	*str;
+	char			*str;
 
 	str = (char *)s;
 	str_len = ft_strlen(str);

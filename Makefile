@@ -6,7 +6,7 @@
 #    By: mlebrun <mlebrun@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/12 08:46:57 by mlebrun           #+#    #+#              #
-#    Updated: 2020/11/12 13:02:06 by mlebrun          ###   ########.fr        #
+#    Updated: 2020/11/14 14:22:18 by mlebrun          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,5 +56,6 @@ re:			fclean all
 
 bonus:		${OBJS_BONUS}
 			ar rc ${NAME} ${OBJS_BONUS}
+			ranlib ${NAME}
 
 .PHONY:		all clean fclean re
