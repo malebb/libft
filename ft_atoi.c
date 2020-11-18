@@ -6,7 +6,7 @@
 /*   By: mlebrun <mlebrun@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/13 10:24:22 by mlebrun           #+#    #+#             */
-/*   Updated: 2020/11/14 15:59:45 by mlebrun          ###   ########.fr       */
+/*   Updated: 2020/11/18 14:51:59 by mlebrun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int				ft_atoi(const char *nptr)
 {
-	int		pos_or_neg;
-	int		i;
-	long	nb;
+	int			pos_or_neg;
+	int			i;
+	long		nb;
 
 	i = 0;
 	while (nptr[i] == '\f' || nptr[i] == '\n' || nptr[i] == '\r'

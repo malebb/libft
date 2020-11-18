@@ -6,7 +6,7 @@
 /*   By: mlebrun <mlebrun@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/13 10:42:38 by mlebrun           #+#    #+#             */
-/*   Updated: 2020/11/14 08:37:24 by mlebrun          ###   ########.fr       */
+/*   Updated: 2020/11/18 16:03:30 by mlebrun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,12 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	unsigned int	size_sub_str;
 	unsigned int	size_str;
 	unsigned int	i;
-	char			*str;
 	char			*sub_str;
+	char			*str;
 
 	str = (char *)s;
+	if (start >= ft_strlen((str)))
+		return (ft_strdup(""));
 	size_str = ft_strlen(str);
 	size_sub_str = size_str - start;
 	if (size_sub_str > len)
