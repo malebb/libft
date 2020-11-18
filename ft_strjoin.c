@@ -6,7 +6,7 @@
 /*   By: mlebrun <mlebrun@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/13 10:41:42 by mlebrun           #+#    #+#             */
-/*   Updated: 2020/11/18 16:27:15 by mlebrun          ###   ########.fr       */
+/*   Updated: 2020/11/18 19:51:38 by mlebrun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,9 @@ char				*ft_strjoin(char const *s1, char const *s2)
 		joined_strs[i] = s1[i];
 		i++;
 	}
-	j = 0;
-	while (j < s2_size)
-	{
+	j = -1;
+	while (++j < s2_size)
 		joined_strs[i + j] = s2[j];
-		j++;
-	}
 	joined_strs[i + j] = '\0';
 	return (joined_strs);
 }

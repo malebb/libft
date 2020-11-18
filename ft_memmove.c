@@ -6,7 +6,7 @@
 /*   By: mlebrun <mlebrun@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/13 10:28:10 by mlebrun           #+#    #+#             */
-/*   Updated: 2020/11/18 18:39:22 by mlebrun          ###   ########.fr       */
+/*   Updated: 2020/11/18 19:50:55 by mlebrun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,9 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	else
 	{
-		i = 0;
-		while (i < len)
-		{
+		i = -1;
+		while (++i < len)
 			des[i] = source[i];
-			i++;
-		}
 	}
 	return (des);
 }
