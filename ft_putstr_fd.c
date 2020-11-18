@@ -6,7 +6,7 @@
 /*   By: mlebrun <mlebrun@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/13 10:41:08 by mlebrun           #+#    #+#             */
-/*   Updated: 2020/11/13 10:41:12 by mlebrun          ###   ########.fr       */
+/*   Updated: 2020/11/18 16:28:06 by mlebrun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putstr_fd(char *s, int fd)
 	int		i;
 
 	i = 0;
-	while (s[i] != '\0')
+	while (s && (s[i] != '\0'))
 	{
 		write(fd, &s[i], 1);
 		i++;

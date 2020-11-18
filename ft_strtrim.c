@@ -6,7 +6,7 @@
 /*   By: mlebrun <mlebrun@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/13 10:42:28 by mlebrun           #+#    #+#             */
-/*   Updated: 2020/11/13 10:42:31 by mlebrun          ###   ########.fr       */
+/*   Updated: 2020/11/18 16:33:37 by mlebrun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,6 +97,8 @@ char			*ft_strtrim(char const *s1, char const *set)
 	char			*str1;
 	char			*the_set;
 
+	if (!s1 || !set)
+		return (NULL);
 	str1 = (char *)s1;
 	the_set = (char *)set;
 	str_len = ft_strlen(str1);
