@@ -6,7 +6,7 @@
 /*   By: mlebrun <mlebrun@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/13 10:27:58 by mlebrun           #+#    #+#             */
-/*   Updated: 2020/11/13 10:27:59 by mlebrun          ###   ########.fr       */
+/*   Updated: 2020/11/18 13:38:31 by mlebrun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	char			*desti;
 	char			*source;
 
+	if (!dest && !src)
+		return (NULL);
 	desti = (char *)dest;
 	source = (char *)src;
 	i = 0;

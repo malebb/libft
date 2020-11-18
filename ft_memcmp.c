@@ -6,7 +6,7 @@
 /*   By: mlebrun <mlebrun@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/13 10:27:42 by mlebrun           #+#    #+#             */
-/*   Updated: 2020/11/13 13:59:14 by mlebrun          ###   ########.fr       */
+/*   Updated: 2020/11/18 13:32:53 by mlebrun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n)
 	str2 = (unsigned char *)s2;
 	if (n == 0)
 		return (0);
-	while ((str1[i] != '\0' && str2[i] != '\0') && i < n - 1)
+	while (i < n - 1)
 	{
 		if (str1[i] != str2[i])
 			return (str1[i] - str2[i]);

@@ -6,7 +6,7 @@
 /*   By: mlebrun <mlebrun@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/13 10:28:10 by mlebrun           #+#    #+#             */
-/*   Updated: 2020/11/13 14:13:12 by mlebrun          ###   ########.fr       */
+/*   Updated: 2020/11/18 14:08:04 by mlebrun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,11 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	char		*source;
 	size_t		i;
 
+	if (!dest && !src)
+		return (NULL);
 	des = (char *)dest;
 	source = (char *)src;
-	if (des >= source)
+	if (des > source)
 	{
 		while (n > 0)
 		{
@@ -31,7 +33,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	else
 	{
 		i = 0;
-		while (source[i] != '\0' && i < n)
+		while (i < n)
 		{
 			des[i] = source[i];
 			i++;
